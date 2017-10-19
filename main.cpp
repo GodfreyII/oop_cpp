@@ -19,9 +19,26 @@ public:
 
     void func() { cout << "Function func() of class Child\n"; }
 };
-
+class Student: public Child
+{
+private:
+string firstname, lastname;
+public:
+void set(string FN, string LN)
+{
+firstname=FN;
+lastname=LN;
+}
+void get()
+{
+cout<<firstname<<" "<<lastname<<endl;
+}
+};
 int main(int argc, char *argv[])
 {
+    Student FirstStudent(Karl, Stepanov);
+    FirstStudent.get();
+    
     cout << "* Create Object base" << endl;
     Base base;
 
