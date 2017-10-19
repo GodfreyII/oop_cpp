@@ -15,7 +15,11 @@ public:
     Child() { cout << "Construct Child object\n"; }
     ~Child() { cout << "Destruct Child object\n"; }
 };
-
+class Student: public Child
+{
+string name;
+string lastname;
+};
 int main(int argc, char *argv[])
 {
     cout << "* Create Object child" << endl;
