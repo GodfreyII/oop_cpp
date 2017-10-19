@@ -11,8 +11,8 @@ public:
  
 class Student: Base
 {
- string  name;
- string last name;
+ string name;
+ string lastname;
 };
 
 int main(int argc, char *argv[])
