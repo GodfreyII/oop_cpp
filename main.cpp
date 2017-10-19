@@ -17,6 +17,24 @@ public:
     Child() { cout << "Construct Child object\n"; }
     ~Child() { cout << "Destruct Child object\n"; }
 };
+class Student: public Child
+{
+private:
+string firstname, lastname;
+public:
+
+void set(string FN, string LN)
+{
+FN=firstname;
+LN=lastname;
+}
+
+void get()
+{
+cout<<FN<<" "<<LN;
+}
+
+};
 
 int main(int argc, char *argv[])
 {
