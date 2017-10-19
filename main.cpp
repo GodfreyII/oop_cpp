@@ -19,7 +19,25 @@ public:
 
     void func() const { cout << "Function func() of class Child\n"; }
 };
-
+class Student: public Child
+{
+private:
+string FirstName, LastName;
+public:
+Student(string FN, string LN)
+{
+set(string FN, string LN);
+}
+void set(FN, LN)
+{
+FirstName=FN;
+LastName=LN;
+}
+void get()
+{
+cout<<FirstName<<" "<<LastName<<endl;
+}
+};
 void Function(const Base &obj)
 {
     cout << "* Call method func() for object obj" << endl;
@@ -28,6 +46,9 @@ void Function(const Base &obj)
 
 int main(int argc, char *argv[])
 {
+    Student FirstStudent(Karl, Stepanov);
+    FirstStudent.get();
+
     cout << "* Create Object base" << endl;
     Base base;
 
