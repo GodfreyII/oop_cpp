@@ -1,3 +1,6 @@
+#ifndef Student_h
+#define Student_h
+
 class Student: public Child
 {
 private:
@@ -7,3 +10,4 @@ public:
     void set(string FN, string LN);
     void get();
 };
+#endif Student_h
