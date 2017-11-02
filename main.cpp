@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Student.h"
 
 using namespace std;
 
@@ -28,6 +29,9 @@ void Function(const Base &obj)
 
 int main(int argc, char *argv[])
 {
+    Student FirstStudent(Karl, Stepanov);
+    FirstStudent.get();
+
     cout << "* Create Object base" << endl;
     Base base;
 
